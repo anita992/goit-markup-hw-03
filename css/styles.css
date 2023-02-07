@@ -25,6 +25,12 @@ body {
   align-items: center;
   justify-content: space-between;
 }
+.logo {
+  margin-top: 24px;
+  margin-right: 93px;
+  margin-bottom: 25px;
+  margin-left: 215px;
+}
 .menu {
   display: flex;
   align-items: center;
@@ -35,6 +41,12 @@ body {
   margin-top: 32px;
   margin-right: 46px;
   margin-bottom: 32px;
+}
+.menu > .link:not(:last-child) {
+  margin-top: 32px;
+  margin-right: 50px;
+  margin-bottom: 32px;
+  margin-left: 371px;
 }
 .index-background {
   width: 1600px;
@@ -48,6 +60,10 @@ body {
   font-size: 44px;
   line-height: 0.73;
   color: var(--third-color);
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
 }
 .link-logo {
   font-family: "Raleway";
