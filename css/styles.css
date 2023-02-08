@@ -20,21 +20,25 @@ body {
   font-family: "Roboto", sans-serif;
   color: var(--main-color, #212121);
 }
+
 .page-header {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  width: 1600px;
+  height: 80px;
+  left: 0px;
+  top: 0px;
 }
-.logo {
-  margin-top: 24px;
-  margin-right: 93px;
-  margin-bottom: 25px;
-  margin-left: 215px;
-}
+
 .menu {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  width: 254px;
+  height: 16px;
+  left: 453px;
+  top: 32px;
 }
 
 .menu > .item:not(:last-child) {
@@ -49,21 +53,46 @@ body {
   margin-left: 371px;
 }
 .index-background {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
   width: 1600px;
   height: 600px;
   left: 0px;
   top: 80px;
   background-color: var(--footbar-background-color);
 }
+.container {
+  width: 1170px;
+  height: 101px;
+  padding-left: 215px;
+  padding-top: 94px;
+  padding-bottom: 94px;
+  padding-right: 215px;
+}
+.card-set {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  gap: 30px;
+  padding: 0;
+}
+.index-item {
+  flex-basis: calc((100% - 20px) / 3);
+  padding: 10px;
+  border-radius: 4px;
+  box-shadow: 0px 2px 1px -1px;
+  border: 0;
+}
 .main-header {
   font-weight: 900;
   font-size: 44px;
-  line-height: 0.73;
+  line-height: 1.36;
   color: var(--third-color);
-  display: flex;
-
-  justify-content: center;
-  align-items: center;
 }
 .link-logo {
   font-family: "Raleway";
@@ -72,6 +101,10 @@ body {
   line-height: 1.3;
   letter-spacing: 0.03em;
   text-decoration: none;
+  margin-top: 24px;
+  margin-right: 93px;
+  margin-bottom: 25px;
+  margin-left: 215px;
   color: var(--main-color);
 }
 
@@ -91,98 +124,20 @@ body {
 }
 
 .button-index {
-  width: 200px;
-  height: 50px;
-  left: 700px;
-  top: 430px;
-  border-radius: 4px;
-  border: 0;
   font-weight: 700;
   font-size: 16px;
-  line-height: 0.53;
+  line-height: 1.88;
   letter-spacing: 0.06em;
   background-color: var(--button-color);
   color: var(--main-color);
-}
-
-.first-button {
-  width: 121px;
-  height: 38px;
-  left: 510px;
-  top: 174px;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 0.62;
-  letter-spacing: 0.03em;
-  border: 0;
+  width: 200px;
+  height: 50px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-  background-color: var(--button-color);
-  color: var(--main-color);
-}
-
-.second-button {
-  width: 93px;
-  height: 38px;
-  left: 639px;
-  top: 174px;
-  border-radius: 4px;
-  background-color: var(--button-color);
-  font-weight: 500;
-  letter-spacing: 0.03em;
-  color: var(--main-color);
-  font-size: 16px;
-  line-height: 0.62;
   border: 0;
-}
-
-.third-button {
-  width: 114px;
-  height: 38px;
-  left: 740px;
-  top: 174px;
-  border-radius: 4px;
-  background-color: var(--button-color);
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 0.62;
-  color: var(--main-color);
-  letter-spacing: 0.03em;
-  border: 0;
-}
-
-.forth-button {
-  width: 91px;
-  height: 38px;
-  left: 862px;
-  top: 174px;
-  background-color: var(--button-color);
-  border-radius: 4px;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 0.62;
-  color: var(--main-color);
-  letter-spacing: 0.03em;
-  border: 0;
-}
-
-.fifth-button {
-  width: 121px;
-  height: 38px;
-  left: 961px;
-  top: 174px;
-  background-color: var(--button-color);
-  border-radius: 4px;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 0.62;
-  letter-spacing: 0.03em;
-  border: 0;
-  color: var(--main-color);
 }
 
 button {
-  background: var(--button-color);
-  border-radius: 4px;
   cursor: pointer;
 }
 
@@ -191,34 +146,58 @@ button:focus {
   background-color: var(--accent-color);
   color: var(--third-color);
 }
+.buttons-category {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+  letter-spacing: 0.03em;
+  background-color: var(--button-color);
+  color: var(--main-color);
+  border: 0;
+}
 
 .text-title {
   font-weight: 700;
   font-size: 14px;
-  line-height: 0.88;
+  line-height: 1.14;
   letter-spacing: 0.03em;
   color: var(--main-color);
 }
 
 .text {
   font-size: 14px;
-  line-height: 0.58;
+  line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--secondary-color);
+  width: 270px;
+  height: 75px;
 }
-
+.container-profession {
+  width: 1170px;
+  height: 386px;
+  padding-left: 215px;
+  padding-top: 94px;
+  padding-right: 215px;
+  padding-bottom: 94px;
+}
 .profession {
+  text-align: center;
   font-weight: 700;
   font-size: 36px;
-  line-height: 0.86;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   color: var(--main-color);
 }
-
+.container-team {
+  width: 1600px;
+  height: 648px;
+  background-color: var(--button-color);
+}
 .team {
+  text-align: center;
   font-weight: 700;
   font-size: 36px;
-  line-height: 0.86;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   color: var(--main-color);
 }
@@ -226,14 +205,14 @@ button:focus {
 .workers-name {
   font-weight: 500;
   font-size: 16px;
-  line-height: 0.84;
+  line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--main-color);
 }
 
 .workers-profession {
   font-size: 16px;
-  line-height: 0.84;
+  line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--secondary-color);
 }
@@ -248,20 +227,20 @@ button:focus {
   font-style: normal;
   font-weight: 700;
   font-size: 26px;
-  line-height: 0.84;
+  line-height: 1.19;
   letter-spacing: 0.03em;
 }
 
 .project-name {
   font-weight: 700;
   font-size: 18px;
-  line-height: 0.5;
+  line-height: 2;
   letter-spacing: 0.06em;
 }
 
 .project-category {
   font-size: 16px;
-  line-height: 0.6;
+  line-height: 1.88;
   letter-spacing: 0.03em;
   color: var(--secondary-color);
 }
@@ -272,6 +251,8 @@ button:focus {
 
 .footbar {
   background: var(--footbar-background-color);
+  width: 1600px;
+  height: 252px;
 }
 
 .logo-word {
@@ -284,14 +265,14 @@ button:focus {
   font-style: normal;
   font-weight: 700;
   font-size: 26px;
-  line-height: 0.84;
+  line-height: 1.19;
   letter-spacing: 0.03em;
   text-decoration: none;
 }
 
 .address a {
   font-size: 14px;
-  line-height: 0.58;
+  line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--third-color);
   text-decoration: none;
@@ -300,7 +281,7 @@ button:focus {
 
 .mail a {
   font-size: 14px;
-  line-height: 0.58;
+  line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--footbar-contact-color);
   text-decoration: underline;
@@ -308,7 +289,7 @@ button:focus {
 
 .telephone a {
   font-size: 14px;
-  line-height: 0.58;
+  line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--footbar-contact-color);
 }
