@@ -29,6 +29,7 @@ body {
   height: 80px;
   left: 0px;
   top: 0px;
+  border-bottom: 1px solid #ececec;
 }
 
 .menu {
@@ -66,12 +67,9 @@ body {
   background-color: var(--footbar-background-color);
 }
 .container {
-  width: 1170px;
-  height: 101px;
-  padding-left: 215px;
-  padding-top: 94px;
-  padding-bottom: 94px;
-  padding-right: 215px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
 }
 .card-set {
   display: flex;
@@ -81,6 +79,7 @@ body {
   gap: 30px;
   padding: 0;
 }
+
 .index-item {
   flex-basis: calc((100% - 20px) / 3);
   padding: 10px;
@@ -187,11 +186,13 @@ button:focus {
   line-height: 1.17;
   letter-spacing: 0.03em;
   color: var(--main-color);
+  padding-bottom: 50px;
 }
 .container-team {
   width: 1600px;
   height: 648px;
   background-color: var(--button-color);
+  justify-content: center;
 }
 .team {
   text-align: center;
@@ -200,14 +201,49 @@ button:focus {
   line-height: 1.17;
   letter-spacing: 0.03em;
   color: var(--main-color);
+  padding-top: 94px;
+}
+.details-container {
+  width: 270px;
+  height: 108px;
+  background-color: var(--third-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  display: block;
+}
+.card {
+  max-width: 320px;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 4px;
+  overflow: hidden;
+  background-color: var(--third-color);
+  box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
 }
 
+.card-image {
+  max-width: 100%;
+  height: auto;
+}
+
+.card-image.no-gap {
+  display: block;
+}
+.our-team {
+  display: flex;
+  justify-content: center;
+  align-content: flex-end;
+  padding-top: 50px;
+}
 .workers-name {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--main-color);
+  text-align: center;
 }
 
 .workers-profession {
@@ -215,6 +251,7 @@ button:focus {
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--secondary-color);
+  text-align: center;
 }
 
 .contact-link {
@@ -251,7 +288,7 @@ button:focus {
 
 .footbar {
   background: var(--footbar-background-color);
-  width: 1600px;
+  width: 1200px;
   height: 252px;
 }
 
@@ -268,6 +305,7 @@ button:focus {
   line-height: 1.19;
   letter-spacing: 0.03em;
   text-decoration: none;
+  padding-left: 10px;
 }
 
 .address a {
