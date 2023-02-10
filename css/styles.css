@@ -6,6 +6,7 @@
   --button-color: #f5f4fa;
   --footbar-background-color: #2f303a;
   --footbar-contact-color: rgba(255, 255, 255, 0.6);
+  --border-color: #eeeeee;
 }
 
 ul {
@@ -78,6 +79,14 @@ body {
   align-content: center;
   gap: 30px;
   padding: 0;
+}
+.button-set {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  gap: 30px;
+  padding: 94px;
 }
 
 .index-item {
@@ -153,6 +162,11 @@ button:focus {
   background-color: var(--button-color);
   color: var(--main-color);
   border: 0;
+  width: 121px;
+  height: 38px;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
 }
 
 .text-title {
@@ -178,6 +192,25 @@ button:focus {
   padding-top: 94px;
   padding-right: 215px;
   padding-bottom: 94px;
+}
+
+.cointeiner-projects {
+  width: 1200px;
+  height: 1360px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.card-projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  gap: 30px;
+  padding: 0;
+}
+.project-item {
+  flex-basis: calc((100% - 20px) / 3);
 }
 .profession {
   text-align: center;
@@ -212,7 +245,7 @@ button:focus {
   display: block;
 }
 .card {
-  max-width: 320px;
+  max-width: 400px;
   margin-bottom: 20px;
   margin-left: auto;
   margin-right: auto;
@@ -221,6 +254,16 @@ button:focus {
   background-color: var(--third-color);
   box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
     0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+}
+.cards-portfolio {
+  max-width: 400px;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 4px;
+  overflow: hidden;
+  background-color: var(--third-color);
+  border: 1px solid var(--border-color);
 }
 
 .card-image {
@@ -273,6 +316,7 @@ button:focus {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+  padding-left: 24px;
 }
 
 .project-category {
@@ -280,6 +324,7 @@ button:focus {
   line-height: 1.88;
   letter-spacing: 0.03em;
   color: var(--secondary-color);
+  padding-left: 24px;
 }
 
 .portfolio-nav {
