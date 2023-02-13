@@ -23,14 +23,20 @@ body {
   font-family: "Roboto", sans-serif;
   color: var(--main-color, #212121);
 }
+.general-width {
+  width: 1600px;
+  display: flex;
+  align-content: center;
+}
 
 .page-header {
   display: flex;
+  justify-content: flex-start;
+
   align-items: center;
-  width: 1600px;
+
   height: 80px;
-  left: 0px;
-  top: 0px;
+
   border-bottom: 1px solid var(--border-line);
 }
 
@@ -38,7 +44,12 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
-  padding-left: 0;
+}
+.item-contact {
+  margin-top: 32px;
+  margin-bottom: 32px;
+  margin-left: 371px;
+  margin-right: 50px;
 }
 
 .menu > .item:not(:last-child) {
@@ -54,7 +65,7 @@ body {
 }
 .menu > .item:last-child {
   margin-top: 32px;
-  margin-right: 371px;
+  margin-bottom: 32px;
 }
 .contact {
   padding-right: 50px;
@@ -74,7 +85,7 @@ body {
 .container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 5px;
+  padding: 0 15px;
 }
 .card-set {
   flex-basis: auto;
