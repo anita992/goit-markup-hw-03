@@ -18,25 +18,27 @@ ul {
 a {
   text-decoration: none;
 }
-
+h2 {
+  margin: 0;
+}
 body {
   font-family: "Roboto", sans-serif;
   color: var(--main-color, #212121);
 }
 .general-width {
   width: 1600px;
-  display: flex;
-  align-content: center;
+  margin: 0 auto;
+}
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .page-header {
   display: flex;
   justify-content: flex-start;
-
   align-items: center;
-
   height: 80px;
-
   border-bottom: 1px solid var(--border-line);
 }
 
@@ -76,10 +78,7 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
-  width: 1600px;
   height: 600px;
-  left: 0px;
-  top: 80px;
   background-color: var(--footbar-background-color);
 }
 .container {
@@ -95,6 +94,7 @@ body {
   align-content: center;
   gap: 30px;
   padding: 0;
+  margin: 0;
 }
 .button-set {
   display: flex;
@@ -149,8 +149,6 @@ body {
   letter-spacing: 0.06em;
   background-color: var(--button-color);
   color: var(--main-color);
-  width: 200px;
-  height: 50px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   border: 0;
@@ -173,10 +171,6 @@ button:focus {
   background-color: var(--button-color);
   color: var(--main-color);
   border: 0;
-  width: 121px;
-  height: 38px;
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
 }
 
@@ -195,14 +189,6 @@ button:focus {
   color: var(--secondary-color);
   width: 270px;
   height: 75px;
-}
-.container-profession {
-  width: 1170px;
-  height: 386px;
-  padding-left: 215px;
-  padding-top: 94px;
-  padding-right: 215px;
-  padding-bottom: 94px;
 }
 
 .card-projects {
@@ -224,9 +210,10 @@ button:focus {
   color: var(--main-color);
   padding-bottom: 50px;
 }
+.our-job {
+  padding-bottom: 94px;
+}
 .container-team {
-  width: 1600px;
-  height: 648px;
   background-color: var(--button-color);
   justify-content: center;
 }
@@ -257,6 +244,7 @@ button:focus {
   background-color: var(--third-color);
   box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
     0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+  margin-bottom: 94px;
 }
 .cards-portfolio {
   max-width: 400px;
@@ -334,14 +322,14 @@ button:focus {
 }
 
 .footbar {
-  background: var(--footbar-background-color);
-  width: 1600px;
-  height: 252px;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
   align-content: flex-start;
+  background: var(--footbar-background-color);
+  width: 1600px;
+  height: 252px;
 }
 
 .logo-word {
