@@ -25,13 +25,22 @@ body {
   font-family: "Roboto", sans-serif;
   color: var(--main-color, #212121);
 }
+
 .general-width {
   width: 1600px;
   margin: 0 auto;
 }
+.main-background {
+  background-color: var(--footbar-background-color);
+}
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
 }
 
 .page-header {
@@ -79,13 +88,8 @@ body {
   align-items: center;
   text-align: center;
   height: 600px;
-  background-color: var(--footbar-background-color);
 }
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 15px;
-}
+
 .card-set {
   flex-basis: auto;
   display: flex;
@@ -198,7 +202,7 @@ button:focus {
   list-style: none;
 }
 .project-item {
-  flex-basis: calc((100% - 80px) / 3);
+  flex-basis: calc((100% - 60px) / 3);
   padding: 0;
 }
 .profession {
@@ -213,8 +217,10 @@ button:focus {
 .our-job {
   padding-bottom: 94px;
 }
-.container-team {
+.team-background {
   background-color: var(--button-color);
+}
+.container-team {
   justify-content: center;
 }
 .team {
