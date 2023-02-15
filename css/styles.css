@@ -13,25 +13,50 @@
 ul {
   list-style-type: none;
   padding-left: 0;
+  margin: 0;
 }
-
+button {
+  padding: 0;
+}
 a {
   text-decoration: none;
 }
+h1 {
+  margin: 0;
+  padding: 0;
+}
 h2 {
   margin: 0;
+  padding: 0;
+}
+h3 {
+  margin: 0;
+  padding: 0;
+}
+h4 {
+  margin: 0;
+  padding: 0;
 }
 body {
   font-family: "Roboto", sans-serif;
   color: var(--main-color, #212121);
 }
+li {
+  margin: 0;
+  padding: 0;
+}
+p {
+  padding: 0;
+  margin: 0;
+}
 
 .general-width {
-  width: 1600px;
-  margin: 0 auto;
+  width: auto;
 }
 .main-background {
   background-color: var(--footbar-background-color);
+  width: auto;
+  margin: 0 auto;
 }
 .section {
   padding-top: 94px;
@@ -106,7 +131,9 @@ body {
   justify-content: center;
   align-content: center;
   gap: 30px;
-  padding: 94px;
+}
+.padding-flex {
+  padding-bottom: 0;
 }
 
 .index-item {
@@ -117,6 +144,8 @@ body {
   font-size: 44px;
   line-height: 1.36;
   color: var(--third-color);
+  margin-bottom: 30px;
+  padding-top: 200px;
 }
 .link-logo {
   font-family: "Raleway";
@@ -153,9 +182,10 @@ body {
   letter-spacing: 0.06em;
   background-color: var(--button-color);
   color: var(--main-color);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   border: 0;
+  margin-bottom: 200px;
+  padding: 10px 41px 10px 42px;
 }
 
 button {
@@ -176,6 +206,7 @@ button:focus {
   color: var(--main-color);
   border: 0;
   border-radius: 4px;
+  padding: 6px 22px;
 }
 
 .text-title {
@@ -184,6 +215,7 @@ button:focus {
   line-height: 1.14;
   letter-spacing: 0.03em;
   color: var(--main-color);
+  margin-bottom: 10px;
 }
 
 .text {
@@ -200,9 +232,9 @@ button:focus {
   flex-wrap: wrap;
   gap: 30px;
   list-style: none;
+  flex-basis: calc((100% - 60px) / 3);
 }
 .project-item {
-  flex-basis: calc((100% - 60px) / 3);
   padding: 0;
 }
 .profession {
@@ -214,11 +246,10 @@ button:focus {
   color: var(--main-color);
   padding-bottom: 50px;
 }
-.our-job {
-  padding-bottom: 94px;
-}
 .team-background {
   background-color: var(--button-color);
+  width: auto;
+  padding: 0;
 }
 .container-team {
   justify-content: center;
@@ -231,6 +262,7 @@ button:focus {
   letter-spacing: 0.03em;
   color: var(--main-color);
   padding-top: 94px;
+  margin-bottom: 50px;
 }
 .details-container {
   width: 270px;
@@ -241,8 +273,6 @@ button:focus {
   display: block;
 }
 .card {
-  max-width: 400px;
-  margin-bottom: 20px;
   margin-left: auto;
   margin-right: auto;
   border-radius: 4px;
@@ -250,7 +280,6 @@ button:focus {
   background-color: var(--third-color);
   box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
     0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
-  margin-bottom: 94px;
 }
 .cards-portfolio {
   max-width: 400px;
@@ -273,7 +302,7 @@ button:focus {
   display: flex;
   justify-content: center;
   align-content: flex-end;
-  padding-top: 50px;
+  padding-bottom: 94px;
 }
 .workers-name {
   font-weight: 500;
@@ -282,6 +311,8 @@ button:focus {
   letter-spacing: 0.03em;
   color: var(--main-color);
   text-align: center;
+  padding-top: 30px;
+  padding-bottom: 10px;
 }
 
 .workers-profession {
@@ -290,6 +321,7 @@ button:focus {
   letter-spacing: 0.03em;
   color: var(--secondary-color);
   text-align: center;
+  padding-bottom: 30px;
 }
 
 .contact-link {
@@ -305,14 +337,18 @@ button:focus {
   line-height: 1.19;
   letter-spacing: 0.03em;
 }
-
+.portfolio-wrap {
+  padding: 0 5px;
+}
+.card-body {
+  padding: 20px 24px;
+}
 .project-name {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-  padding-left: 24px;
-  padding-bottom: 4px;
+  margin-bottom: 4px;
 }
 
 .project-category {
@@ -320,7 +356,6 @@ button:focus {
   line-height: 1.88;
   letter-spacing: 0.03em;
   color: var(--secondary-color);
-  padding-left: 24px;
 }
 
 .portfolio-nav {
@@ -334,8 +369,6 @@ button:focus {
   justify-content: center;
   align-content: flex-start;
   background: var(--footbar-background-color);
-  width: 1600px;
-  height: 252px;
 }
 
 .logo-word {
@@ -349,11 +382,10 @@ button:focus {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
-  width: 145px;
-  height: 31px;
   letter-spacing: 0.03em;
   text-decoration: none;
-  padding-left: 0;
+  padding-top: 60px;
+  padding-bottom: 20px;
 }
 
 .address a {
@@ -372,6 +404,7 @@ button:focus {
   letter-spacing: 0.03em;
   color: var(--footbar-contact-color);
   text-decoration: underline;
+  padding: 9px 0;
 }
 
 .telephone a {
@@ -379,6 +412,7 @@ button:focus {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--footbar-contact-color);
+  padding-bottom: 60px;
 }
 .address a:hover,
 .address a:focus {
