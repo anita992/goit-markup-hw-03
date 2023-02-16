@@ -49,14 +49,15 @@ p {
   padding: 0;
   margin: 0;
 }
-
-.general-width {
-  width: auto;
-}
 .main-background {
   background-color: var(--footbar-background-color);
-  width: auto;
-  margin: 0 auto;
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+.main-background-footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: var(--footbar-background-color);
 }
 .section {
   padding-top: 94px;
@@ -73,18 +74,17 @@ p {
   justify-content: flex-start;
   align-items: center;
   height: 80px;
+}
+.bottom-border {
   border-bottom: 1px solid var(--border-line);
 }
-
 .menu {
   display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
 }
 .item-contact {
   margin-top: 32px;
   margin-bottom: 32px;
-  margin-left: 371px;
+  padding-left: 371px;
   margin-right: 50px;
 }
 
@@ -107,30 +107,19 @@ p {
   padding-right: 50px;
 }
 .index-background {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   text-align: center;
-  height: 600px;
 }
 
 .card-set {
-  flex-basis: auto;
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-content: center;
   gap: 30px;
-  padding: 0;
-  margin: 0;
 }
 .button-set {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-content: center;
-  gap: 30px;
+  gap: 8px;
+  margin-bottom: 50px;
 }
 .padding-flex {
   padding-bottom: 0;
@@ -145,7 +134,6 @@ p {
   line-height: 1.36;
   color: var(--third-color);
   margin-bottom: 30px;
-  padding-top: 200px;
 }
 .link-logo {
   font-family: "Raleway";
@@ -180,11 +168,11 @@ p {
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.06em;
-  background-color: var(--button-color);
-  color: var(--main-color);
+  background-color: var(--accent-color);
+  color: var(--button-color);
   border-radius: 4px;
   border: 0;
-  margin-bottom: 200px;
+
   padding: 10px 41px 10px 42px;
 }
 
@@ -223,8 +211,6 @@ button:focus {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--secondary-color);
-  width: 270px;
-  height: 75px;
 }
 
 .card-projects {
@@ -244,16 +230,12 @@ button:focus {
   line-height: 1.17;
   letter-spacing: 0.03em;
   color: var(--main-color);
-  padding-bottom: 50px;
+  margin-bottom: 50px;
 }
 .team-background {
   background-color: var(--button-color);
-  width: auto;
-  padding: 0;
 }
-.container-team {
-  justify-content: center;
-}
+
 .team {
   text-align: center;
   font-weight: 700;
@@ -261,7 +243,7 @@ button:focus {
   line-height: 1.17;
   letter-spacing: 0.03em;
   color: var(--main-color);
-  padding-top: 94px;
+
   margin-bottom: 50px;
 }
 .details-container {
@@ -301,8 +283,6 @@ button:focus {
 .our-team {
   display: flex;
   justify-content: center;
-  align-content: flex-end;
-  padding-bottom: 94px;
 }
 .workers-name {
   font-weight: 500;
@@ -384,8 +364,7 @@ button:focus {
   line-height: 1.19;
   letter-spacing: 0.03em;
   text-decoration: none;
-  padding-top: 60px;
-  padding-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .address a {
@@ -404,7 +383,7 @@ button:focus {
   letter-spacing: 0.03em;
   color: var(--footbar-contact-color);
   text-decoration: underline;
-  padding: 9px 0;
+  margin: 9px 0;
 }
 
 .telephone a {
@@ -412,7 +391,6 @@ button:focus {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--footbar-contact-color);
-  padding-bottom: 60px;
 }
 .address a:hover,
 .address a:focus {
